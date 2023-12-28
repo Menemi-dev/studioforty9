@@ -1,7 +1,7 @@
-$mobile: '(max-width: calc(#{map.get($containers, "mobile", "breakpoint")} - 1px))';
+$mobile: '(max-width: #{map.get($containers, "mobile", "breakpoint")})';
 
 .h1 {
-  font-family: map.get($font-families, "primary", "bold");
+  font-weight: 'bold';
   font-size: 2.625rem;
   line-height: 66px;
   color: map.get($colours, "secondary", "main");

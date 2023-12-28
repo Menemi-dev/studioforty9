@@ -1,16 +1,4 @@
 @font-face {
-  font-family: 'IBM Plex Sans Regular';
-  src: url('../../assets/IBMPlexSans-Regular.woff2') format('woff2');
-}
-@font-face {
-  font-family: 'IBM Plex Sans Medium';
-  src: url('../../assets/IBMPlexSans-Medium.woff2') format('woff2');
-}
-@font-face {
-  font-family: 'IBM Plex Sans Bold';
-  src: url('../../assets/IBMPlexSans-Bold.woff2') format('woff2');
-}
-@font-face {
   font-family: 'IBM Plex Mono';
   src: url('../../assets/IBMPlexMono-Regular.woff2') format('woff2');
 }
@@ -20,16 +8,15 @@
 }
 
 $font-families: (
-  "primary": (
-    "regular": #{'IBM Plex Sans Regular', sans-serif},
-    "medium": #{'IBM Plex Sans Medium', sans-serif},
-    "bold": #{'IBM Plex Sans Bold', sans-serif}
-  ),
   "button": #{'IBM Plex Sans Condensed', sans-serif},
   "announcement": #{'IBM Plex Mono', monospace}
 );
 
 $colours: (
+  "primary": (
+    "main": #70B72B,
+    "variant": #5C9822
+  ),
   "secondary": (
     "main": #004289,
     "variant": #032C58
@@ -38,12 +25,16 @@ $colours: (
     "info": (
       "main": #0468DB,
       "variant": #B4D2F4
-    )
+    ),
+    "danger": #DA394C
+  ),
+  "base": (
+    "dark": #333333
   )
 );
 
 $containers: (
   "mobile": (
-    "breakpoint": 1100px
+    "breakpoint": 767px
   )
 );

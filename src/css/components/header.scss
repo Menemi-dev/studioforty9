@@ -1,0 +1,101 @@
+.section-header {
+  .logo-area {
+    align-items: unset;
+  }
+  .logo-area__right.inline-menu-center {
+    align-items: flex-start;
+    margin-top: 30px;
+  }
+  .logo-area__left.inline-menu-center {
+    .logo-area__left__inner {
+      overflow: visible;
+      width: calc(100vw - 450px);
+    }
+    .main-search {
+      visibility: visible;
+      opacity: 1;
+      pointer-events: all;
+      margin-top: 30px;
+      max-height: unset;
+      &__form {
+        max-width: unset;
+        margin: 0;
+      }
+      &__results {
+        margin: 30px auto;
+      }
+      &__input {
+        font-weight: 500;
+        font-size: 14px;
+        padding: 1px 10px;
+        line-height: 22px;
+        &::placeholder {
+          color: map.get($colours, "secondary", "main");
+        }
+      }
+      &__button svg {
+        width: 15px;
+        height: 15px;
+      }
+      &__hidden {
+        display: none;
+      }
+      &__hidden-close {
+        position: absolute;
+        right: 50px;
+        top: -10px;
+        padding: 10px;
+        svg {
+          width: 23px;
+          height: 23px;
+          stroke-width: 1;
+        }
+      }
+      @media #{$mobile} {
+        display: none;
+      }
+    }
+    .navigation--left {
+      bottom: 0;
+      height: 50%;
+      margin-top: auto;
+    }
+  }
+  .main-search {
+    &__hidden-close svg, &__button svg {
+      color: map.get($colours, "secondary", "main");
+    }
+  }
+  .navigation__item {
+    &.featured-link a {
+      color: map.get($colours, "context", "danger");
+    }
+    .navigation__link {
+      color:  map.get($colours, "base", "dark");
+    }
+    &:hover {
+      .navigation__link {
+        &:hover {
+          color:  map.get($colours, "base", "dark");
+        }
+        &:before {
+          color:  map.get($colours, "primary", "main");
+        }
+      }
+    }
+    &--active .navigation__link {
+      color:  map.get($colours, "primary", "main");
+    }
+  }
+  .cart-link__label {
+    font-weight: 500;
+    width: 3.2rem;
+    text-align: right;
+  }
+  .wishlist-link {
+    margin: 0 2rem;
+  }
+  .pageheader .logo {
+    padding: 5px 0;
+  }
+}

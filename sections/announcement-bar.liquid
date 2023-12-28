@@ -35,7 +35,9 @@
             {%- for block in section.blocks -%}
               <div class="announcement{% unless forloop.first %} announcement--inactive{% endunless %}" {{ block.shopify_attributes }}>
                 <div class="announcement__text">
-                  <img class="announcement__icon" src="{{ block.settings.icon | image_url }}"/>
+                  {% if block.settings.icon %}
+                    <img class="announcement__icon" src="{{ block.settings.icon | image_url }}"/>
+                  {% endif %}
                   {{ block.settings.text }}
                 </div>
               </div>
