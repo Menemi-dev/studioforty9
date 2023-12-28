@@ -1,4 +1,5 @@
-$mobile: '(max-width: #{map.get($containers, "mobile", "breakpoint")})';
+$mobile: '(max-width: calc(#{map.get($containers, "mobile", "breakpoint")} - 1px))';
+$tablet: '(max-width: calc(#{map.get($containers, "tablet", "breakpoint")} - 1px))';
 
 .h1 {
   font-weight: 'bold';
@@ -7,5 +8,13 @@ $mobile: '(max-width: #{map.get($containers, "mobile", "breakpoint")})';
   color: map.get($colours, "secondary", "main");
   @media #{$mobile} {
     font-size: 1.375rem;
+  }
+}
+.h4 {
+  font-weight: bold;
+  font-size: 1.125rem;
+  line-height: 31px;
+  @media #{$mobile} {
+    font-size: 0.875rem;
   }
 }

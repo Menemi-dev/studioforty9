@@ -1,0 +1,32 @@
+#pagefooter .cross-page-promos {
+  padding: 25px 0;
+  .icon-with-caption {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .icon-with-caption__text {
+      text-transform: none;
+      font-size: 24px;
+      margin: 0;
+      margin-left: 1rem;
+      @media (max-width: 1378px) {
+        font-size: 1rem;
+      }
+      @media #{$tablet} {
+        margin-top: 1rem;
+        font-size: 24px;
+      }
+    }
+    svg {
+      width: 20px;
+      height: 20px;
+      @media #{$tablet} {
+        width: 24px;
+        height: 24px;
+      }
+    }
+    @media #{$tablet} {
+      display: block;
+    }
+  }
+}

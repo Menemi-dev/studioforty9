@@ -34,7 +34,10 @@ $colours: (
 );
 
 $containers: (
+  "tablet": (
+    "breakpoint": 1024px
+  ),
   "mobile": (
-    "breakpoint": 767px
+    "breakpoint": 768px
   )
 );
