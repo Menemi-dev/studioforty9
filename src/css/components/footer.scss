@@ -29,7 +29,7 @@
     }
   }
   &__title {
-    text-transform: none;
+    color: inherit;
   }
   &__menu-block__menu li {
     margin: 0;
@@ -79,9 +79,6 @@
     background-color: map.get($colours, "secondary", "main");
     color: #FFF;
     padding: 40px 60px 40px 40px;
-    h6 {
-      color: #FFF;
-    }
     .section-footer__text {
       opacity: 60%;
     }

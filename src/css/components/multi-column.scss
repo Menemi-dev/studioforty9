@@ -1,0 +1,33 @@
+.section-multi-column {
+  .container {
+    text-align: center;
+  }
+  h6 {
+    margin-bottom: 30px;
+  }
+  h2 {
+    margin: auto;
+    margin-bottom: 30px;
+    max-width: 71rem;
+  }
+  .flexible-layout {
+    margin: 30px auto;
+    @media #{$mobile} {
+      align-items: center;
+    }
+  }
+  .text-column {
+    padding: 15px;
+    margin: 0;
+    max-width: 330px;
+    &__title {
+      margin: 10px 0;
+    }
+    &__text {
+      padding: 15px;
+    }
+    &__image {
+      margin: 0 auto;
+    }
+  }
+}

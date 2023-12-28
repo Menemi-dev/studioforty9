@@ -1,21 +1,61 @@
 $mobile: '(max-width: calc(#{map.get($containers, "mobile", "breakpoint")} - 1px))';
 $tablet: '(max-width: calc(#{map.get($containers, "tablet", "breakpoint")} - 1px))';
 
-.h1 {
-  font-weight: 'bold';
-  font-size: 2.625rem;
-  line-height: 66px;
-  color: map.get($colours, "secondary", "main");
+h1,
+.h1-style {
+  font-size: 4.125rem;
+  line-height: 4.125rem;
   @media #{$mobile} {
-    font-size: 1.375rem;
+    font-size: 2.75rem;
+    line-height: 2.75rem;
   }
 }
-.h4 {
-  font-weight: bold;
+
+h2,
+.h2-style {
+  font-size: 2.25rem;
+  line-height: normal;
+  @media #{$mobile} {
+    font-size: 1.1rem;
+  }
+}
+
+h3,
+.h3-style {
+  font-size: 1.875rem;
+  line-height: normal;
+  @media #{$mobile} {
+    font-size: 1.475rem;
+  }
+}
+
+h4,
+.h4-style {
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  line-height: normal;
+  @media #{$mobile} {
+    font-size: 1.3rem;
+  }
+}
+
+h5,
+.h5-style {
   font-size: 1.125rem;
   line-height: 31px;
   @media #{$mobile} {
     font-size: 0.875rem;
+  }
+}
+
+h6,
+.h6-style {
+  font-family: map.get($font-families, "button");
+  font-size: 0.875rem;
+  letter-spacing: 0.7px;
+  line-height: normal;
+  @media #{$mobile} {
+    font-size: 0.675rem;
   }
 }
 
@@ -27,12 +67,17 @@ button,
 input[type=submit],
 input[type=reset],
 input[type=button] {
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 16px;
+  font-family: map.get($font-families, "button");
+  font-size: 14px;
+  line-height: 14px;
+  letter-spacing: 1.4px;
   padding: 1.12rem 0;
   width: 17rem;
 }
 .notabutton {
   width: auto;
+}
+
+.fully-padded-row--medium {
+  padding: 90px 0;
 }

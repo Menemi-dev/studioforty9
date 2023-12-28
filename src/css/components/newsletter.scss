@@ -8,12 +8,12 @@
     max-width: 40rem;
     margin: auto;
     h2 {
+      color: map.get($colours, "base", "dark");
       font-size: 36px;
       margin: 0;
     }
   }
   .rte {
-    color: map.get($colours, "secondary", "main");
     opacity: 60%;
     margin-bottom: 1.25rem;
   }

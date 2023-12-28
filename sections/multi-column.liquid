@@ -8,8 +8,13 @@
   {% endstyle %}
 
   <div class="container">
+    {% if section.settings.preheading != blank %}
+      <h6 class="align-center" data-cc-animate>
+        {{- section.settings.preheading | escape -}}
+      </h6>
+    {% endif %}
     {% if section.settings.title != blank %}
-      <h2 class="hometitle h4-style align-center" data-cc-animate>
+      <h2 class="h1-style hometitle align-center" data-cc-animate>
         {{- section.settings.title | escape -}}
       </h2>
     {% endif %}
@@ -50,6 +55,12 @@
         </div>
       {% endfor %}
     </div>
+
+    {% if section.settings.section_button_label != blank %}
+      <div class="text-column__button-row text-column__button-row--{{ section.settings.button_style }}">
+        <a class="text-column__button {% if section.settings.button_style != 'link' %}btn btn--{{ section.settings.button_style }}{% else %}small-feature-link{% endif %}" href="{{ section.settings.section_button_link }}">{{ section.settings.section_button_label | escape }}</a>
+      </div>
+    {% endif %}
   </div>
 </div>
 
@@ -64,6 +75,11 @@
       "id": "title",
       "label": "Heading",
       "default": "Multi-column"
+    },
+    {
+      "type": "text",
+      "id": "preheading",
+      "label": "Preheading"
     },
     {
       "type": "select",
@@ -104,6 +120,16 @@
           "value": "link"
         }
       ]
+    },
+    {
+      "type": "text",
+      "id": "section_button_label",
+      "label": "Section button label"
+    },
+    {
+      "type": "url",
+      "id": "section_button_link",
+      "label": "Section button link"
     },
     {
       "id": "use_alt_bg",
