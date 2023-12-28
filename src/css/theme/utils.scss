@@ -18,3 +18,17 @@ $tablet: '(max-width: calc(#{map.get($containers, "tablet", "breakpoint")} - 1px
     font-size: 0.875rem;
   }
 }
+
+.button,
+a.button,
+.btn,
+a.btn,
+button,
+input[type=submit],
+input[type=reset],
+input[type=button] {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+  padding: 1rem 4.5rem;
+}

@@ -65,6 +65,9 @@
     &__hidden-close svg, &__button svg {
       color: map.get($colours, "secondary", "main");
     }
+    &__input{
+      background: #F5F6F4;
+    }
   }
   .navigation__item {
     &.featured-link a {

@@ -59,7 +59,7 @@
 
               {% if block.settings.show_social_icons != blank %}
                 <div class="section-footer__text-block__social">
-                  {% capture icon_size %}{% if block.settings.soc_icons_large %}x46{% else %}x30{% endif %}{% endcapture %}
+                  {% capture icon_size %}{% if block.settings.soc_icons_large %}x50{% else %}x30{% endif %}{% endcapture %}
                   {% capture container_class %}{% if block.settings.soc_icons_large %}social-links--large{% else %}{% endif %}{% endcapture %}
                   {% render 'social-icons', icon_setting: settings.social_custom_icon, icon_size: icon_size, container_class: container_class %}
                 </div>
@@ -96,6 +96,9 @@
                       {% endfor %}
                     {% endif %}
                     <input type="hidden" name="contact[tags]" value="prospect,newsletter"/>
+                    <p>
+                      {{ 'layout.signup.input_label' | t | escape }}
+                    </p>
                     <p>
                       <input type="email"
                         placeholder="{{ 'layout.signup.placeholder' | t }}"
@@ -141,19 +144,6 @@
           </div>
 
         {% endif %}
-        {% if section.settings.lower_menu != blank %}
-          <div class="section-footer__lower-menu" role="navigation">
-            <ul class="section-footer__lower-menu__list" aria-label="{{ 'layout.footer.navigation_aria_label' | t | escape }}">
-              {% for link in linklists[section.settings.lower_menu].links %}
-                <li>
-                  <a href="{{ link.url }}">
-                    {{- link.title -}}
-                  </a>
-                </li>
-              {% endfor %}
-            </ul>
-          </div>
-        {% endif %}
       </div>
       <div class="section-footer__row__col">
         {% if section.settings.show_language_selector or section.settings.show_country_selector %}
@@ -163,10 +153,24 @@
         {% endif %}
 
         <div class="copyright">
-          <span class="copy">&copy; {{ "now" | date: "%Y" }} <a href="{{ routes.root_url }}">{{ shop.name }}</a>.</span>
+          <span class="copy">Copyright &copy; <a href="{{ routes.root_url }}">{{ shop.name }}</a></span>
 
-          {{ powered_by_link }}
+          {% if section.settings.lower_menu != blank %}
+            {% for link in linklists[section.settings.lower_menu].links %}
+            <span class="copyright__menu">
+              <a href="{{ link.url }}">
+                {{- link.title -}}
+              </a>
+            </span>
+            {% endfor %}
+          {% endif %}
 
+        </div>
+      </div>
+
+      <div class="section-footer__row__col">
+        <div class="credits">
+          Built by <img src="{{ settings.favicon | img_url: 'master' }}" alt="favicon"><strong>{{ shop.name }}</strong>
         </div>
       </div>
     </div>

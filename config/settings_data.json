@@ -945,26 +945,26 @@
   },
   "current": {
     "use_fullwidth_layout": true,
-    "font_col_base": "#6d7175",
-    "font_col_link": "#202223",
-    "font_col_heads": "#202223",
-    "font_col_shoptitle": "#202223",
-    "font_col_sale": "#df5641",
-    "btn_col": "#013299",
-    "btn_col_alt": "#000000",
+    "font_col_base": "#333333",
+    "font_col_link": "#004289",
+    "font_col_heads": "#004289",
+    "font_col_shoptitle": "#004289",
+    "font_col_sale": "#da394c",
+    "btn_col": "#004289",
+    "btn_col_alt": "#333333",
     "btn_col_txt": "#ffffff",
     "btn_alt_bg": "#ffffff",
-    "btn_alt_txt": "#000000",
+    "btn_alt_txt": "#004289",
     "bg_col": "#ffffff",
     "bg_image": "",
     "bg_method": "repeatxy",
     "head_bg_col": "#ffffff",
-    "head_txt_col": "#202223",
-    "head_nav_div_col": "#e2e2e2",
-    "font_col_nav": "#6d7175",
+    "head_txt_col": "#004289",
+    "head_nav_div_col": "#3e5166",
+    "font_col_nav": "#333333",
     "font_col_nav_hov": "#202223",
     "panel_nav_bg": "#ffffff",
-    "nav_featured_col": "#df5641",
+    "nav_featured_col": "#da394c",
     "not_shade_bg": "#f6f6f6",
     "image_overlay_text": "#ffffff",
     "image_overlay_bg": "#000000",
@@ -978,7 +978,7 @@
     "prod_thumb_detail_col_h": "#202223",
     "prod_thumb_detail_col": "#6d7175",
     "prod_thumb_detail_col_a": "#202223",
-    "prod_over_redu_text": "#df5641",
+    "prod_over_redu_text": "#da394c",
     "prod_over_redu_bg": "#ffffff",
     "prod_over_low_text": "#6d7175",
     "prod_over_low_bg": "#ffffff",
@@ -986,28 +986,28 @@
     "prod_over_new_bg": "#013299",
     "prod_over_meta_text": "#ffffff",
     "prod_over_meta_bg": "#09728c",
-    "prod_label_sale_text": "#df5641",
+    "prod_label_sale_text": "#da394c",
     "prod_label_sold_text": "#202223",
     "prod_label_pre_text": "#60a57e",
     "prod_inv_in_text": "#008060",
     "prod_rating_star": "#6d7175",
-    "cross_page_promo_bg": "#f0eee8",
-    "cross_page_promo_color": "#322b76",
+    "cross_page_promo_bg": "#004289",
+    "cross_page_promo_color": "#ffffff",
     "foot_bg_col": "#ffffff",
-    "foot_text_col": "#6d7175",
-    "foot_heading_col": "#202223",
+    "foot_text_col": "#333333",
+    "foot_heading_col": "#333333",
     "foot_divider_col": "#e0e0e0",
-    "type_heading_font": "gill_sans_nova_n6",
+    "type_heading_font": "ibm_plex_sans_n7",
     "capitalize_headings": true,
-    "type_base_font": "futura_n4",
-    "type_nav_font": "futura_n5",
-    "type_logo_font": "gill_sans_nova_n6",
-    "font_size_heading_int": 28,
-    "font_size_base_int": 15,
-    "font_size_nav_int": 14,
+    "type_base_font": "ibm_plex_sans_n4",
+    "type_nav_font": "ibm_plex_sans_n7",
+    "type_logo_font": "ibm_plex_sans_n7",
+    "font_size_heading_int": 50,
+    "font_size_base_int": 16,
+    "font_size_nav_int": 16,
     "font_size_logo_int": 28,
     "button_style": "caps",
-    "button_shape": "slightlyrounded",
+    "button_shape": "sharp",
     "prod_thumb_shape": "shortest",
     "prod_thumb_crop": true,
     "prod_thumb_text_align": "left",
@@ -1022,17 +1022,22 @@
     "prod_sale_show": true,
     "prod_sold_out_show": true,
     "enable_product_reviews_collection": false,
+    "social_twitter_url": "https:\/\/twitter.com\/shopify",
+    "social_facebook_url": "https:\/\/facebook.com\/shopify",
+    "social_pinterest_url": "https:\/\/pinterest.com\/shopify",
+    "social_instagram_url": "https:\/\/instagram.com\/shopify",
     "search_type": "product",
     "enable_live_search": true,
     "live_search_show_vendor": false,
     "live_search_show_price": false,
     "live_search_search_meta": false,
+    "favicon": "shopify:\/\/shop_images\/favicon.svg",
     "cart_type": "drawer",
     "sections": {
       "header": {
         "type": "header",
         "settings": {
-          "logo": "shopify:\/\/shop_images\/805-04_1.png",
+          "logo": "shopify:\/\/shop_images\/logo.svg",
           "logo_img_width_int": 145,
           "mobile_logo_img_width_int": 115,
           "logo_h1": false,
@@ -1050,6 +1055,8 @@
           "enable_search": true,
           "search_suggestions_title": "",
           "search_suggestions_menu": "",
+          "enable_wishlist_icon": true,
+          "wishlist_url": "",
           "icon_strategy": "icons_cart_search",
           "cart_icon": "cart"
         }
@@ -1060,16 +1067,16 @@
           "1478526632862": {
             "type": "icon",
             "settings": {
-              "icon": "box",
-              "text": "Free delivery!",
+              "icon": "box_return",
+              "text": "28 Day Returns",
               "link_url": ""
             }
           },
           "1478527611164": {
             "type": "icon",
             "settings": {
-              "icon": "percent",
-              "text": "Student discount",
+              "icon": "truck",
+              "text": "Free Delivery On Orders Over €40",
               "link_url": ""
             }
           },
@@ -1077,15 +1084,7 @@
             "type": "icon",
             "settings": {
               "icon": "map_pin",
-              "text": "Your nearest store",
-              "link_url": ""
-            }
-          },
-          "1478526647261": {
-            "type": "icon",
-            "settings": {
-              "icon": "gift",
-              "text": "Gift cards",
+              "text": "Irish Family Business Since 1984",
               "link_url": ""
             }
           }
@@ -1093,8 +1092,7 @@
         "block_order": [
           "1478526632862",
           "1478527611164",
-          "1478526645605",
-          "1478526647261"
+          "1478526645605"
         ],
         "settings": {
           "visibility": "all"
@@ -1106,27 +1104,38 @@
           "1601372812538": {
             "type": "text",
             "settings": {
-              "title": "Talk about your store",
-              "text": "<p>Use this text area to tell your customers about your brand and vision. You can change it in the theme editor.<\/p>",
-              "image_width": 55,
-              "show_social_icons": true,
-              "soc_icons_large": true
+              "title": "",
+              "text": "",
+              "image": "shopify:\/\/shop_images\/logo.svg",
+              "image_width": 155,
+              "show_social_icons": false,
+              "soc_icons_large": false
             }
           },
           "1601372709037": {
             "type": "menu",
             "settings": {
-              "title": "Quick links",
+              "title": "Info",
               "menu": "footer"
+            }
+          },
+          "f03680b0-902e-4bc0-af5f-b3dd78fc01e1": {
+            "type": "text",
+            "settings": {
+              "title": "Contact",
+              "text": "<p>Tel &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;<a href=\"tel:012 3456789\" title=\"tel:012 3456789\">012 3456789<\/a><br\/>E-mail &nbsp;<strong> <\/strong><a href=\"mailto:hello@domain.com\" title=\"mailto:hello@domain.com\">hello@domain.com<\/a><br\/><br\/>Lorem Ipsum Outdoor <br\/>Unit 1, Lipsum,<br\/>City, Co. County<br\/><br\/>Follow Us<\/p>",
+              "image_width": 100,
+              "show_social_icons": true,
+              "soc_icons_large": true
             }
           },
           "1601372771635": {
             "type": "newsletter",
             "settings": {
-              "title": "Newsletter",
-              "text": "<p>Sign up for exclusive offers, original stories, events and more.<\/p>",
+              "title": "Join Our Newsletter",
+              "text": "<p>Be the first to know about Our offers, events, new arrivals & sales.<\/p>",
               "button_style": "primary",
-              "show_social_icons": true,
+              "show_social_icons": false,
               "soc_icons_large": false
             }
           }
@@ -1134,13 +1143,14 @@
         "block_order": [
           "1601372812538",
           "1601372709037",
+          "f03680b0-902e-4bc0-af5f-b3dd78fc01e1",
           "1601372771635"
         ],
         "settings": {
-          "lower_menu": "",
-          "show_payment_icons": true,
-          "show_country_selector": true,
-          "show_language_selector": true
+          "lower_menu": "lower-footer-menu",
+          "show_payment_icons": false,
+          "show_country_selector": false,
+          "show_language_selector": false
         }
       },
       "announcement-bar": {
