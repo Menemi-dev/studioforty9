@@ -74,6 +74,12 @@
         "default": "#ffffff"
       },
       {
+        "type": "color",
+        "id": "btn_col_variant",
+        "label": "Background variant",
+        "default": "#032C58"
+      },
+      {
         "type": "header",
         "content": "Secondary buttons"
       },
@@ -88,6 +94,12 @@
         "id": "btn_alt_txt",
         "label": "Text and border",
         "default": "#232323"
+      },
+      {
+        "type": "color",
+        "id": "btn_alt_txt_variant",
+        "label": "Text and border variant",
+        "default": "#ffffff"
       },
       {
         "type": "header",

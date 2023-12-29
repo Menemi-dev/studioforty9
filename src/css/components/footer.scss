@@ -40,13 +40,13 @@
       margin-bottom: 10px;
     }
     p a {
-    color: map.get($colours, "secondary", "main");
+    color: var(--color-primary-btn);
     font-weight: 700;
     }
   }
   &__text-block__social {
     svg {
-      color: map.get($colours, "secondary", "main");
+      color: var(--color-primary-btn);
     }
     .social-links.social-links--large a svg {
       width: 50px;
@@ -76,7 +76,7 @@
     }
   }
   &__newsletter-block {
-    background-color: map.get($colours, "secondary", "main");
+    background-color: var(--color-primary-btn);
     color: #FFF;
     padding: 40px 60px 40px 40px;
     .section-footer__text {
@@ -84,9 +84,6 @@
     }
     .btn {
       padding: 18px 0;
-      &--primary {
-        background-color: map.get($colours, "secondary", "variant");
-      }
     }
     &__label {
       margin-bottom: 5px;

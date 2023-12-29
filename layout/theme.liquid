@@ -29,6 +29,8 @@
     assign nav_font_600 = nav_font | font_modify: 'weight', '600'
   -%}
 
+  {% include 'css-variables' %}
+
   <style>
     {{ base_font | font_face: font_display: 'fallback' }}
     {{ base_font_bold | font_face: font_display: 'fallback' }}

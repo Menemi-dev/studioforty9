@@ -78,6 +78,30 @@ input[type=button] {
   width: auto;
 }
 
+.btn.btn--primary:hover {
+  box-shadow: 0px 4px 4px 0px rgba(29, 31, 34, 0.25);
+}
+.btn.btn--primary.btn--variant {
+  background-color: var(--color-primary-btn-variant);
+  border-color: var(--color-primary-btn-variant);
+}
+.btn.btn--primary.btn--light {
+  background-color: #FFF;
+  color: var(--color-primary-btn);
+}
+.button.altcolour:hover,
+.btn.btn--secondary:hover,
+button.altcolour:hover,
+input[type=submit].altcolour:hover,
+input[type=reset].altcolour:hover,
+input[type=button].altcolour:hover {
+  color: #FFF;
+  background-color: var(--color-primary-btn-variant);
+}
+.btn.btn--secondary.btn--variant {
+  border-color: var(--color-secondary-btn-variant);
+  color: var(--color-secondary-btn-variant);
+}
 .fully-padded-row--medium {
   padding: 90px 0;
 }

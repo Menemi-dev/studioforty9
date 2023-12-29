@@ -14,7 +14,19 @@
 
   assign cheapest_variant = product.variants | sort: 'price' | first
 -%}
+<style>
+.price-label--sold-out {
+  background: {{ settings.prod_label_sold_text }};
+}
 
+.price-label--sale {
+  background: {{ settings.prod_label_sale_text }};
+}
+
+.price-label--preorder {
+  background: {{ settings.prod_label_pre_text }};
+}
+</style>
 <div data-product-id="{{ product.id }}" class="product-block" {% if animate %}data-cc-animate{% endif %}>
   <div class="block-inner">
     <div class="block-inner-inner">
@@ -88,8 +100,16 @@
 
           {% if settings.quickbuy_style == 'button' %}
             {% unless no_quick_buy %}
-              <a class="btn btn--secondary quickbuy-toggle" href="{{ product_url }}">{{ 'products.quick_buy.launch' | t }}</a>
+              <a class="btn btn--primary quickbuy-toggle" href="{{ product_url }}">{{ 'products.quick_buy.launch' | t }}</a>
             {% endunless %}
+          {% endif %}
+
+          {% if settings.prod_sold_out_show and product.available == false %}
+            <span class="product-price__item price-label price-label--sold-out">{{ 'products.labels.sold_out' | t }}</span>
+          {% elsif settings.prod_pre_order_label_show and product.template_suffix contains 'preorder' %}
+            <span class="product-price__item price-label price-label--preorder">{{ 'products.product.preorder' | t }}</span>
+          {% elsif settings.prod_sale_show and cheapest_variant.compare_at_price > cheapest_variant.price %}
+            <span class="product-price__item price-label price-label--sale">{{ 'products.labels.sale' | t }}</span>
           {% endif %}
         </div>
       {% else %}
@@ -127,13 +147,6 @@
                   <span class="product-price__item product-price__compare theme-money">{{ cheapest_variant.compare_at_price | money }}</span>
                 {% endif %}
 
-                {% if settings.prod_sold_out_show and product.available == false %}
-                  <span class="product-price__item price-label price-label--sold-out">{{ 'products.labels.sold_out' | t }}</span>
-                {% elsif settings.prod_pre_order_label_show and product.template_suffix contains 'preorder' %}
-                  <span class="product-price__item price-label price-label--preorder">{{ 'products.product.preorder' | t }}</span>
-                {% elsif settings.prod_sale_show and cheapest_variant.compare_at_price > cheapest_variant.price %}
-                  <span class="product-price__item price-label price-label--sale">{{ 'products.labels.sale' | t }}</span>
-                {% endif %}
               </div>
 
               {% render 'unit-price', variant: cheapest_variant %}

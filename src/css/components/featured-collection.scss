@@ -1,0 +1,23 @@
+.section-featured-collection {
+  .collection-slider {
+    &-row {
+      margin: 40px 0 70px;
+    }
+  }
+  .hometitle {
+    margin-bottom: 20px;
+  }
+  .owl-carousel {
+    button.owl-dot {
+      background: #666;
+      width: 8px;
+      height: 8px;
+      margin-right: 8px;
+      border-radius: 50%;
+      &.active {
+        background: none;
+        border: #666 solid 1px;
+      }
+    }
+  }
+}

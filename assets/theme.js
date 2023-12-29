@@ -284,16 +284,16 @@
       Theme editor lifecycle events
       Deferred initialisation
       Event cleanup
-  
+
     There are two ways to register a section.
     In a theme:
       theme.Sections.register('slideshow', theme.SlideshowSection);
       theme.Sections.register('header', theme.HeaderSection, { deferredLoad: false });
       theme.Sections.register('background-video', theme.VideoManager, { deferredLoadViewportExcess: 800 });
-  
+
     As a component:
       cc.sections.push({ name: 'faq', section: theme.Faq });
-  
+
     Assign any of these to receive Shopify section lifecycle events:
       this.onSectionLoad
       this.afterSectionLoadCallback
@@ -304,7 +304,7 @@
       this.onSectionUnload
       this.afterSectionUnloadCallback
       this.onSectionReorder
-  
+
     If you add any events using the manager's registerEventListener,
     e.g. this.registerEventListener(element, 'click', this.functions.handleClick.bind(this)),
     these will be automatically cleaned up after onSectionUnload.
@@ -2944,10 +2944,10 @@
           margin: 0,
           loop: isLooping,
           autoWidth: true,
-          items: Math.min($this.children().length, 8),
+          items: Math.min($this.children().length, 4),
           center: true,
           nav: false,
-          dots: false };
+          dots: true };
 
       }
 
@@ -7139,5 +7139,5 @@
     }
   });
 
-})(theme.jQuery);  
+})(theme.jQuery);
 /* Built with Barry v1.0.8 */

@@ -12,28 +12,6 @@ $font-families: (
   "announcement": #{'IBM Plex Mono', monospace}
 );
 
-$colours: (
-  "primary": (
-    "main": #70B72B,
-    "variant": #5C9822
-  ),
-  "secondary": (
-    "main": #004289,
-    "variant": #032C58
-  ),
-  "context": (
-    "info": (
-      "main": #0468DB,
-      "variant": #B4D2F4
-    ),
-    "danger": #DA394C
-  ),
-  "base": (
-    "dark": #333333,
-    "light": #F5F6F4
-  )
-);
-
 $containers: (
   "tablet": (
     "breakpoint": 1024px
