@@ -1,0 +1,14 @@
+<aside class="sidebar desktop-only" title="Sidebar">
+  <h3 class="sidebar__title">{{ title }}</h3>
+  {% if menu != blank %}
+  <ul>
+    {% for link in linklists[menu].links %}
+      <li>
+        <a href="{{ link.url }}" class="{% if link.current %}sidebar__link--active{% endif %}">
+          {{- link.title -}}
+        </a>
+      </li>
+    {% endfor %}
+  </ul>
+  {% endif %}
+</aside>

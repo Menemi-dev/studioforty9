@@ -1,0 +1,38 @@
+.page-section-spacing {
+  margin: 0;
+  .article-body {
+    padding: 60px 60px 184px;
+    @media #{$mobile} {
+      padding: 40px 40px 84px;
+    }
+  }
+  .article--with-sidebar {
+    display: table;
+    height: 100%;
+    .article-body {
+      display: table-cell;
+      width: 70%;
+      height: 100%;
+      @media #{$mobile} {
+        width: 100%;
+      }
+    }
+  }
+  .page-header {
+    padding: 0;
+  }
+  .majortitle {
+    text-align: left;
+    margin-bottom: 24px;
+  }
+  h2, h4, p {
+    margin: 24px 0;
+  }
+  h4 {
+    font-weight: 400;
+  }
+}
+.article .container {
+  max-width: 100%;
+  padding: 0;
+}

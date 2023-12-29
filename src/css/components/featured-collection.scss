@@ -26,6 +26,10 @@
         width: 65.5px;
         height: 65.5px;
         top: calc(50% - 65px);
+        @media #{$tablet} {
+          width: 50px;
+          height: 50px;
+        }
         &.owl-prev {
           left: 20px;
         }
@@ -33,6 +37,10 @@
           width: 32.75px;
           height: 32.75px;
           vertical-align: unset;
+          @media #{$tablet} {
+            width: 20px;
+            height: 20px;
+          }
         }
       }
     }

@@ -1,0 +1,26 @@
+.sidebar {
+  display: table-cell;
+  vertical-align: top;
+  background-color: var(--color-main-background);
+  padding: 51px 63px;
+  width: 30%;
+  height: 100%;
+  @media #{$tablet} {
+    padding: 51px 40px;
+  }
+  &__title {
+    margin-bottom: 43px;
+  }
+  ul {
+    margin: 0;
+  }
+  ul li {
+    list-style: none;
+  }
+  a {
+    color: var(--color-body-text);
+    &.sidebar__link--active {
+      color: var(--color-primary-btn);
+    }
+  }
+}

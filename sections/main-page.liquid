@@ -1,12 +1,17 @@
 {% unless section.settings.full_width %}<div class="article">{% endunless %}
-  <div class="container cf" data-cc-animate>
-    <div class="page-header cf">
-      <h1 class="majortitle">{{ page.title }}</h1>
+  <article class="container cf {% if section.settings.sidebar %}article--with-sidebar{% endif %}" data-cc-animate>
+    <div class="article-body">
+      <div class="page-header">
+        <h1 class="majortitle">{{ page.title }}</h1>
+      </div>
+      <div class="rte">
+        {{ page.content }}
+      </div>
     </div>
-    <div class="rte">
-      {{ page.content }}
-    </div>
-  </div>
+    {% if section.settings.sidebar %}
+      {% render 'sidebar', title: section.settings.sidebar_title, menu: section.settings.sidebar_menu %}
+    {% endif %}
+  </article>
 {% unless section.settings.full_width %}</div>{% endunless %}
 
 
@@ -20,6 +25,23 @@
         "id": "full_width",
         "label": "Full width",
         "default": false
+      },
+      {
+        "type": "checkbox",
+        "id": "sidebar",
+        "label": "Use sidebar",
+        "default": true
+      },
+      {
+        "type": "text",
+        "id": "sidebar_title",
+        "label": "Sidebar title",
+        "default": "Sidebar"
+      },
+      {
+        "type": "link_list",
+        "id": "sidebar_menu",
+        "label": "Sidebar menu"
       }
     ]
   }

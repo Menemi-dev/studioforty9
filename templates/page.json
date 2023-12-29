@@ -1,1 +1,94 @@
-{"sections":{"main":{"type":"main-page","settings":{"full_width":false}}},"order":["main"]}
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "full_width": false,
+        "sidebar": true,
+        "sidebar_title": "Sidebar",
+        "sidebar_menu": "sidebar"
+      }
+    },
+    "4274eeab-427c-4cbb-bb38-0640efd528a7": {
+      "type": "newsletter",
+      "settings": {
+        "title": "join our Newsletter",
+        "subheading": "<p>Be the first to know about our offers, events &  new arrivals<\/p>",
+        "image": "shopify:\/\/shop_images\/newsletter.jpg"
+      }
+    },
+    "3d282d86-5f5a-4233-8ce8-3b96040171b1": {
+      "type": "multi-column",
+      "blocks": {
+        "163592857728b8bdc2-0": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/story1.svg",
+            "image_width": 60,
+            "title": "WE love outdoors",
+            "text": "<p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.<\/p>",
+            "button_label": "",
+            "link": ""
+          }
+        },
+        "163592857728b8bdc2-1": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/story2.svg",
+            "image_width": 60,
+            "title": "Sustainable",
+            "text": "<p>Curabitur blandit tempus porttitor. Maecenas faucibus mollis interdum.<\/p>",
+            "button_label": "",
+            "link": ""
+          }
+        },
+        "163592857728b8bdc2-2": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/story3.svg",
+            "image_width": 60,
+            "title": "based in IRELAND",
+            "text": "<p>Sed posuere consectetur est at lobortis. Aenean lacinia bibendum nulla sed consectetur.<\/p>",
+            "button_label": "",
+            "link": ""
+          }
+        },
+        "103e720c-dd5d-4f11-a61e-74a0bc8620c6": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/story4.svg",
+            "image_width": 60,
+            "title": "something",
+            "text": "<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit<\/p>",
+            "button_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "163592857728b8bdc2-0",
+        "163592857728b8bdc2-1",
+        "163592857728b8bdc2-2",
+        "103e720c-dd5d-4f11-a61e-74a0bc8620c6"
+      ],
+      "settings": {
+        "title": "\"Pellentesque in ipsum id orci porta dapibus.\"",
+        "preheading": "Quisque velit nisi-",
+        "text_alignment": "center",
+        "button_style": "secondary",
+        "section_button_label": "learn more",
+        "section_button_link": "#",
+        "use_alt_bg": true
+      }
+    }
+  },
+  "order": [
+    "main",
+    "4274eeab-427c-4cbb-bb38-0640efd528a7",
+    "3d282d86-5f5a-4233-8ce8-3b96040171b1"
+  ]
+}
