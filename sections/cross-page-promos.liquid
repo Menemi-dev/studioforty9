@@ -24,7 +24,7 @@
       assign column_width = 'full'
     endif
   %}
-  <div class="cross-page-promos">
+  <div class="cross-page-promos" style="background-color: {{ settings.cross_page_promo_bg }}; color: {{ settings.cross_page_promo_color }}">
     <div class="container cf">
       <div class="flexible-layout {% if column_width == 'quarter' %}layout-all-quarters{% endif %}">
 
@@ -359,6 +359,15 @@
             "id": "link_url",
             "label": "Icon link"
           }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Cross-page promos",
+        "settings": {
+        },
+        "blocks": [
         ]
       }
     ]

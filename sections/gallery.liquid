@@ -54,14 +54,14 @@
   <div class="{{ super_container_class }}">
     {%- unless section.settings.full_width -%}<div class="container container--not-mobile">{%- endunless -%}
 
-    <div class="gallery gallery--height-{{ section.settings.height }} gallery--grid-{{ section.settings.grid }}{% if section.settings.enable_margin %} gallery--with-margins{% endif %}{% if section.settings.enable_carousel %} gallery--mobile-carousel slick-slider-overlay-dots{% endif %}{% if section.settings.full_width and section.settings.enable_margin %} gallery--with-vertical-outer-padding{% endif %}" data-grid="{{ section.settings.grid }}">
+    <div class="gallery gallery--{{ section.settings.orientation }} gallery--height-{{ section.settings.height }} gallery--grid-{{ section.settings.grid }}{% if section.settings.enable_margin %} gallery--with-margins{% endif %}{% if section.settings.enable_carousel %} gallery--mobile-carousel slick-slider-overlay-dots{% endif %}{% if section.settings.full_width and section.settings.enable_margin %} gallery--with-vertical-outer-padding{% endif %}" data-grid="{{ section.settings.grid }}">
       <div class="gallery__row">
         {%- for block in section.blocks -%}
           {%- assign forloop_mod_grid = forloop.index0 | modulo: section.settings.grid -%}
           {%- if forloop.index0 > 0 and forloop_mod_grid == 0 -%}
             </div><div class="gallery__row">
           {%- endif -%}
-          {%- assign show_overlay_text = false -%}
+          {%- assign show_F = false -%}
           {%- if block.settings.title != blank or block.settings.subheading != blank or block.settings.button_label != blank -%}
             {%- assign show_overlay_text = true -%}
           {%- endif -%}
@@ -69,6 +69,7 @@
           <div class="gallery__item
               gallery__item-{{ forloop.index }}
               {% if block.settings.enlarge_image %}gallery__item--enlarged{% endif %}
+              {% if block.settings.image_left %}image-left{% endif %}
               image-overlay
               image-overlay--bg-{{ section.settings.overlay_style }}
               image-overlay--edge-boxes
@@ -97,18 +98,23 @@
             {%- endif -%}
 
             {%- if show_overlay_text -%}
-            <div class="overlay-text overlay--v-{{ block.settings.text_alignment | split: ' ' | first }} overlay--h-{{ block.settings.text_alignment | split: ' ' | last }} image-overlay__over">
+            <div class="overlay-background"></div>
+            <div class="overlay-text overlay--v-{{ block.settings.text_alignment | split: ' ' | first }} overlay--h-{{ block.settings.text_alignment | split: ' ' | last }} image-overlay__over"
+                style="{% if block.settings.background_color %}background-color: {{ block.settings.background_color }}{% endif %}">
               <div class="overlay-text__inner">
                 <div class="overlay-text__text">
                   {%- if block.settings.subheading != blank -%}
-                    <div class="overlay-text__subheading subheading subheading--over">{{ block.settings.subheading | escape }}</div>
+                    <div class="h6-style overlay-text__subheading subheading subheading--over">{{ block.settings.subheading | escape }}</div>
                   {%- endif -%}
                   {%- if block.settings.title != blank -%}
-                    <h2 class="overlay-text__title h4-style">{% render 'multiline-text' with block.settings.title %}</h2>
+                    <h2 class="overlay-text__title h1-style">{% render 'multiline-text' with block.settings.title %}</h2>
+                  {%- endif -%}
+                  {%- if block.settings.text != blank -%}
+                    <p class="overlay-text__textarea">{% render 'multiline-text' with block.settings.text %}</p>
                   {%- endif -%}
                   {%- if block.settings.button_label != blank -%}
                     <div class="overlay-text__button-row overlay-text__button-row--{{ section.settings.button_style }}">
-                      <span class="overlay-text__button {% if section.settings.button_style != 'link' %}btn btn--{{ section.settings.button_style }}{% else %}small-feature-link{% endif %}">{{ block.settings.button_label | escape }}</span>
+                      <span class="overlay-text__button {% if section.settings.button_style != 'link' %}btn btn--light btn--{{ section.settings.button_style }}{% else %}small-feature-link{% endif %}">{{ block.settings.button_label | escape }}</span>
                     </div>
                   {%- endif -%}
                 </div>
@@ -139,6 +145,22 @@
       "step": 1,
       "label": "Max images per row",
       "default": 2
+    },
+    {
+      "type": "select",
+      "id": "orientation",
+      "label": "Orientation",
+      "options": [
+        {
+          "value": "vertical",
+          "label": "Vertical"
+        },
+        {
+          "value": "horizontal",
+          "label": "Horizontal"
+        }
+      ],
+      "default": "horizontal"
     },
     {
       "type": "radio",
@@ -338,6 +360,12 @@
           "default": false
         },
         {
+          "type": "checkbox",
+          "id": "image_left",
+          "label": "Image left",
+          "default": false
+        },
+        {
           "type": "text",
           "id": "subheading",
           "label": "Subheading",
@@ -347,6 +375,12 @@
           "type": "textarea",
           "id": "title",
           "label": "Heading",
+          "default": "Heading"
+        },
+        {
+          "type": "textarea",
+          "id": "text",
+          "label": "Text",
           "default": "Tell your story"
         },
         {
@@ -402,6 +436,11 @@
             }
           ],
           "default": "bottom left"
+        },
+        {
+          "type": "color",
+          "id": "background_color",
+          "label": "Background color"
         }
       ]
     }

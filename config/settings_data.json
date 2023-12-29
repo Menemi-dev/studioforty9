@@ -951,7 +951,7 @@
     "font_col_shoptitle": "#004289",
     "font_col_sale": "#da394c",
     "btn_col": "#004289",
-    "btn_col_alt": "#333333",
+    "btn_col_alt": "#032C58",
     "btn_col_txt": "#ffffff",
     "btn_alt_bg": "rgba(0,0,0,0)",
     "btn_alt_txt": "#004289",
@@ -960,9 +960,9 @@
     "bg_method": "repeatxy",
     "head_bg_col": "#ffffff",
     "head_txt_col": "#004289",
-    "head_nav_div_col": "#3e5166",
+    "head_nav_div_col": "#ffffff",
     "font_col_nav": "#333333",
-    "font_col_nav_hov": "#202223",
+    "font_col_nav_hov": "#70b72b",
     "panel_nav_bg": "#ffffff",
     "nav_featured_col": "#da394c",
     "not_shade_bg": "#f6f6f6",
@@ -1040,7 +1040,7 @@
       "header": {
         "type": "header",
         "settings": {
-          "logo": "shopify:\/\/shop_images\/logo.svg",
+          "logo": "shopify:\/\/shop_images\/logo.png",
           "logo_img_width_int": 145,
           "mobile_logo_img_width_int": 115,
           "logo_h1": false,
@@ -1050,7 +1050,7 @@
           "menu_linklist": "main-menu",
           "menu_linklist_mobile": "",
           "menu_layout": "inline-menu-center",
-          "nav_featured_link": "Sale",
+          "nav_featured_link": "Offers",
           "enable_mobile_promo_carousel": true,
           "enable_nav_mob_products": false,
           "nav_mob_products_title": "Best Sellers",
@@ -1109,8 +1109,8 @@
             "settings": {
               "title": "",
               "text": "",
-              "image": "shopify:\/\/shop_images\/logo.svg",
-              "image_width": 155,
+              "image": "shopify:\/\/shop_images\/logo.png",
+              "image_width": 150,
               "show_social_icons": false,
               "soc_icons_large": false
             }

@@ -59,6 +59,13 @@ h6,
   }
 }
 
+.container {
+  padding: 0 20px;
+  @media #{$mobile} {
+    padding: 0 20px;
+  }
+}
+
 .button,
 a.button,
 .btn,
@@ -98,7 +105,7 @@ input[type=button].altcolour:hover {
   color: #FFF;
   background-color: var(--color-primary-btn-variant);
 }
-.btn.btn--secondary.btn--variant {
+.btn.btn--secondary.btn--light {
   border-color: var(--color-secondary-btn-variant);
   color: var(--color-secondary-btn-variant);
 }

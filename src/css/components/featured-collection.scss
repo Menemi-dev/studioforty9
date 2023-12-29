@@ -19,5 +19,22 @@
         border: #666 solid 1px;
       }
     }
+    .owl-nav {
+      button {
+        border-radius: 50%;
+        background-color: #FFF;
+        width: 65.5px;
+        height: 65.5px;
+        top: calc(50% - 65px);
+        &.owl-prev {
+          left: 20px;
+        }
+        svg {
+          width: 32.75px;
+          height: 32.75px;
+          vertical-align: unset;
+        }
+      }
+    }
   }
 }
