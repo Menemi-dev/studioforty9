@@ -1207,6 +1207,14 @@
     },
     "content_for_index": [
 
-    ]
+    ],
+    "blocks": {
+      "26e68ec5-5663-44b1-a079-c8a5e7cdf66b": {
+        "type": "shopify:\/\/apps\/boost-ai-search-discovery\/blocks\/boost-sd\/7fc998ae-a150-4367-bab8-505d8a4503f7",
+        "disabled": false,
+        "settings": {
+        }
+      }
+    }
   }
 }
