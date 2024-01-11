@@ -12,7 +12,7 @@
   }
   .boost-sd__refine-by-vertical-refine-by {
     border: 0;
-    margin-bottom: 34px;
+    margin-bottom: 24px;
     padding: 0;
     &-item {
       flex-direction: row-reverse;
@@ -40,7 +40,7 @@
   }
   .boost-sd__filter-option {
     border: none;
-    padding: 26px 0;
+    padding: 12px 0;
     &-title {
       &:before, span {
         display: none;
@@ -86,7 +86,7 @@
     }
   }
   .boost-sd__filter-tree-vertical {
-    width: 250px;
+    max-width: 237px;
     margin-right: 0;
     &-content {
       padding-top: 31px;
@@ -130,7 +130,7 @@
     }
   }
   .boost-sd__pagination {
-    margin-bottom: 35px;
+    padding: 55px 0;
   }
   .boost-sd-layout {
     padding: 0;
@@ -187,7 +187,6 @@
     &-list {
       margin: 45px 0 0 auto;
       gap: 40px 30px;
-      justify-content: space-evenly;
       width: 100%;
     }
     &-image-row {
@@ -217,6 +216,8 @@
   .boost-sd__pagination {
     &-number--square {
       margin: 0 4px;
+      width: 50px;
+      height: 50px;
     }
     &-button {
       padding-right: 28px;
@@ -253,6 +254,7 @@
   .rte {
     max-width: 60rem;
     margin: auto;
+    padding: 0 20px;
     color: var(--color-primary-btn);
   }
 }

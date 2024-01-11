@@ -1,11 +1,11 @@
 #pagefooter .section-footer {
   overflow: hidden;
-  max-width: 1440px;
-  margin: auto;
-  [data-section-type=footer] {
-    margin-right: -3.5rem;
-    @media #{$tablet} {
-      margin-right: 0;
+  .container {
+    padding: 0;
+    max-width: 1440px;
+    margin: auto;
+    @media #{$mobile} {
+      padding: 0 20px;
     }
   }
   &__row--blocks {
@@ -26,6 +26,7 @@
         }
         &__newsletter-block {
           flex-basis: 365px;
+          margin-right: -2rem;
         }
         &__menu-block {
           flex-basis: 300px;

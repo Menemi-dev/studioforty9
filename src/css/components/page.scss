@@ -1,5 +1,6 @@
 .page-section-spacing {
-  margin: 0;
+  margin: auto;
+  max-width: 2000px;
   .article-body {
     padding: 60px 60px 184px;
     @media #{$mobile} {
