@@ -1,15 +1,42 @@
 .section-header {
   .logo-area {
     align-items: unset;
+    padding: 0 40px;
+    @media #{$mobile} {
+      padding: 0 20px;
+    }
   }
   .logo-area__right.inline-menu-center {
     align-items: flex-start;
     margin-top: 30px;
+    max-width: 200px;
+    @media #{$mobile} {
+      flex: 0;
+    }
   }
   .logo-area__left.inline-menu-center {
+    margin: 0;
+    flex: 2 0 0;
+    @media #{$mobile} {
+      flex: 0;
+    }
     .logo-area__left__inner {
       overflow: visible;
-      width: calc(100vw - 450px);
+      width: calc(100vw - 50px);
+      transform: translateX(0);
+      transform: translateY(0);
+      max-width: 1034px;
+      @media #{$tablet} {
+        width: 100%;
+      }
+    }
+    .navigation__tier-1 {
+      &-container {
+        margin-top: auto;
+        @media (max-width: 1280px) {
+          padding-left: 22px;
+        }
+      }
     }
     .main-search {
       visibility: visible;
@@ -17,6 +44,7 @@
       pointer-events: all;
       margin-top: 30px;
       max-height: unset;
+      padding-left: 44px;
       &__form {
         max-width: unset;
         margin: 0;
@@ -29,6 +57,7 @@
         font-size: 14px;
         padding: 1px 10px;
         line-height: 22px;
+        height: 32px;
         &::placeholder {
           color: var(--color-primary-btn);
         }
@@ -43,7 +72,7 @@
       &__hidden-close {
         position: absolute;
         right: 50px;
-        top: -10px;
+        top: -5px;
         padding: 10px;
         svg {
           width: 23px;
@@ -58,8 +87,20 @@
     .navigation--left {
       bottom: 0;
       height: 50%;
-      margin-top: auto;
+      margin-top: 30px;
+      @media #{$tablet} {
+        display: none;
+      }
     }
+  }
+  .navigation__tier-1>.navigation__item>.navigation__link {
+    padding: 22px;
+    &:before {
+      bottom: 16px;
+    }
+  }
+  .logo-area__middle {
+    max-width: 145px;
   }
   .main-search {
     &__hidden-close svg, &__button svg {
@@ -90,6 +131,12 @@
       color:  var(--color-primary);
     }
   }
+  .cart-link__count {
+    display: none;
+    @media #{$mobile} {
+      display: block;
+    }
+  }
   .cart-link__label {
     font-weight: 500;
     width: 50px;
@@ -97,6 +144,9 @@
   }
   .wishlist-link {
     margin: 0 35px;
+    @media #{$mobile} {
+      margin: 0 10px;
+    }
   }
   .pageheader .logo {
     padding: 5px 0;

@@ -49,7 +49,7 @@
         "title_size": 66,
         "title_size_mobile": 34,
         "enable_margin": true,
-        "enable_row_spacing": true,
+        "enable_row_spacing": false,
         "full_width": false,
         "use_alt_bg": false,
         "enable_carousel": true,
@@ -91,7 +91,8 @@
         "362094eb-d81f-4d4d-9500-922065ca08b9"
       ],
       "settings": {
-        "visibility": "all"
+        "visibility": "all",
+        "section_margin": true
       }
     },
     "d5407471-b70f-45c2-a87b-493c2a0f5ffb": {

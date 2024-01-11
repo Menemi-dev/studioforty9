@@ -4,6 +4,9 @@
   @media #{$tablet} {
     padding: 20px 0;
   }
+  &.with-margin {
+    margin: 20px 0;
+  }
   .icon-with-caption {
     display: flex;
     align-items: center;
@@ -16,6 +19,7 @@
       }
       @media #{$tablet} {
         margin-top: 0.5rem;
+        font-size: 14px;
       }
       @media #{$mobile} {
         font-size: 20px;

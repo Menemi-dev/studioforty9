@@ -52,19 +52,17 @@
       }
     },
     "9146355e-ac85-40f4-8fa3-285c15fe4b2b": {
-      "type": "rich-text",
+      "type": "collection-hero",
       "blocks": {
         "template--14946894676054__9146355e-ac85-40f4-8fa3-285c15fe4b2b-heading-1": {
           "type": "heading",
           "settings": {
-            "title": "",
             "use_h1": false
           }
         },
         "template--14946894676054__9146355e-ac85-40f4-8fa3-285c15fe4b2b-text-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Sed posuere consectetur est at lobortis. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Maecenas faucibus mollis interdum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam id dolor id nibh ultricies vehicula ut id elit.<\/p>",
             "enlarge_text": false
           }
         }
@@ -79,12 +77,90 @@
         "full_width": true,
         "use_alt_bg": true
       }
+    },
+    "70e18adc-a538-4ed7-b1b6-b330272b0944": {
+      "type": "newsletter",
+      "settings": {
+        "title": "join our Newsletter",
+        "subheading": "<p>Be the first to know about our offers, events &  new arrivals<\/p>",
+        "image": "shopify:\/\/shop_images\/newsletter.jpg"
+      }
+    },
+    "31fb6849-fd7c-477b-8b52-5118f25bb23c": {
+      "type": "multi-column",
+      "blocks": {
+        "163592857728b8bdc2-0": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/story1.svg",
+            "image_width": 60,
+            "title": "WE love outdoors",
+            "text": "<p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.<\/p>",
+            "button_label": "",
+            "link": ""
+          }
+        },
+        "163592857728b8bdc2-1": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/story2.svg",
+            "image_width": 60,
+            "title": "Sustainable",
+            "text": "<p>Curabitur blandit tempus porttitor. Maecenas faucibus mollis interdum.<\/p>",
+            "button_label": "",
+            "link": ""
+          }
+        },
+        "163592857728b8bdc2-2": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/story3.svg",
+            "image_width": 60,
+            "title": "based in IRELAND",
+            "text": "<p>Sed posuere consectetur est at lobortis. Aenean lacinia bibendum nulla sed consectetur.<\/p>",
+            "button_label": "",
+            "link": ""
+          }
+        },
+        "103e720c-dd5d-4f11-a61e-74a0bc8620c6": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/story4.svg",
+            "image_width": 60,
+            "title": "something",
+            "text": "<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit<\/p>",
+            "button_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "163592857728b8bdc2-0",
+        "163592857728b8bdc2-1",
+        "163592857728b8bdc2-2",
+        "103e720c-dd5d-4f11-a61e-74a0bc8620c6"
+      ],
+      "settings": {
+        "title": "\"Pellentesque in ipsum id orci porta dapibus.\"",
+        "preheading": "Quisque velit nisi-",
+        "text_alignment": "center",
+        "button_style": "secondary",
+        "section_button_label": "learn more",
+        "section_button_link": "#",
+        "use_alt_bg": true
+      }
     }
   },
   "order": [
     "cd781a01-172a-4757-81e8-1edb401d3d11",
     "main",
-    "9146355e-ac85-40f4-8fa3-285c15fe4b2b"
+    "9146355e-ac85-40f4-8fa3-285c15fe4b2b",
+    "70e18adc-a538-4ed7-b1b6-b330272b0944",
+    "31fb6849-fd7c-477b-8b52-5118f25bb23c"
   ],
   "wrapper": ".boost-sd__product-filter-fallback"
 }

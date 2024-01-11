@@ -330,6 +330,9 @@
               {%- else -%}
                 {%- render 'svg-cart' -%}
               {%- endif -%}
+              {%- if cart.item_count > 0 -%}
+                <span class="cart-link__count">{{ cart.item_count }}</span>
+              {%- endif -%}
             </span>
             <span class="cart-link__label{% if section.settings.icon_strategy == 'icons_only' %} visually-hidden{% endif %}">
               {{- 'layout.header.cart' | t | escape | append: ' '-}} {{ cart.item_count }}
@@ -575,7 +578,7 @@
             logoArea = document.querySelector('.logo-area'),
             computedLogoAreaStyle = getComputedStyle(logoArea),
             logoAreaInnerWidth = logoArea.clientWidth - Math.ceil(parseFloat(computedLogoAreaStyle.paddingLeft)) - Math.ceil(parseFloat(computedLogoAreaStyle.paddingRight)),
-            availableNavWidth = logoAreaInnerWidth - Math.max(rightWidth, middleWidth) * 2 - 40;
+            availableNavWidth = logoAreaInnerWidth - Math.max(rightWidth, middleWidth) * 2;
         inlineNavContainer.style.maxWidth = availableNavWidth + 'px';
       }
 

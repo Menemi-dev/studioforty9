@@ -1,10 +1,15 @@
 #pagefooter .section-footer {
   overflow: hidden;
+  max-width: 1440px;
+  margin: auto;
   [data-section-type=footer] {
-    margin-right: -4.5rem;
+    margin-right: -3.5rem;
     @media #{$tablet} {
       margin-right: 0;
     }
+  }
+  &__row--blocks {
+    padding-bottom: 60px;
   }
   &__row--blocks[data-num-blocks="4"]  {
     justify-content: end;
@@ -59,9 +64,13 @@
   &__row-lower {
     align-items: center;
     justify-content: space-evenly;
-    padding: 30px 0;
+    padding: 40px 0;
+    @media #{$tablet} {
+      padding: 20px 0;
+    }
     .copyright span {
       margin-right: 0.3rem;
+      font-size: 16px;
       &.copyright__menu::before {
         content: "|";
         margin-right: 0.3rem;

@@ -1162,6 +1162,7 @@
           "1478526632860": {
             "type": "announcement",
             "settings": {
+              "icon": "shopify:\/\/shop_images\/Vector.svg",
               "text": "<p>Order Now for Next Day Delivery <a href=\"#\" title=\"#\">Learn More<\/a><\/p>"
             }
           }

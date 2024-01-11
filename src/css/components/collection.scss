@@ -2,8 +2,13 @@
   .fully-spaced-row--medium {
     margin: 0;
   }
-  .boost-sd__header-image--small {
-    height: 302px;
+  .boost-sd__header {
+    &-image--small {
+      height: 302px;
+    }
+    &-description {
+      display: none;
+    }
   }
   .boost-sd__refine-by-vertical-refine-by {
     border: 0;
@@ -234,5 +239,20 @@
     .boost-sd__button--close svg rect {
       fill: var(--color-primary);
     }
+  }
+}
+
+.section-collection-hero {
+  .fully-padded-row--small {
+    padding: 62px 0;
+  }
+  .majortitle {
+    margin-bottom: 10px;
+    color: var(--color-primary-btn);
+  }
+  .rte {
+    max-width: 60rem;
+    margin: auto;
+    color: var(--color-primary-btn);
   }
 }
